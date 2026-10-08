@@ -127,7 +127,7 @@ According to the official **CSET489 Practical Mini-Project Handbook & Evaluation
 | **Academic Citation & Integrity** | Completely absent | Completely absent | **Core Pillar (Evaluates DOI verification & paper grounding)** |
 | **Content Depth per Tool** | Short marketing blurbs (75–150 words) | Moderate overviews (100–250 words) | **Comprehensive profiles (350+ words, pros/cons, quotas, best-for)** |
 | **Structured Data Implementation** | Basic Schema markup | Standard WebSite/Article Schema | **SoftwareApplication (sanitized), ItemList, Article, FAQPage** |
-| **Performance Architecture** | Heavy CMS with display ad and tracking scripts | Ad-supported CMS with third-party banners | **Next.js 14 SSG on Vercel Edge (Zero ads, pre-rendered static HTML)** |
+| **Performance Architecture** | Heavy CMS with display ad and tracking scripts | Ad-supported CMS with third-party banners | **Next.js App Router SSG on Vercel Edge (Zero ads, pre-rendered static HTML)** |
 
 ---
 

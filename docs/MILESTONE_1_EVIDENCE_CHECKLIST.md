@@ -153,7 +153,7 @@ According to the official **CSET489 Practical Mini-Project Handbook & Evaluation
 * **Current Implementation Status:** **NOT CURRENTLY IMPLEMENTED AS A LINUX VPS OR WORDPRESS.**
 * **Architectural Declaration for Report:**
   * **Academic Disclosure:** *Do NOT claim that Vercel is a Linux VPS, and do NOT claim that Next.js is WordPress.*
-  * Clearly document that the team elected to build a modern, high-speed **Jamstack application (Next.js 14 App Router on Vercel Edge)**.
+  * Clearly document that the team elected to build a modern, high-speed **Jamstack application (Next.js App Router on Vercel Edge)**.
   * *Defense Rationale:* Monolithic WordPress on free or low-tier servers suffers from database latency, PHP-FPM bottlenecks, and vulnerability bloat. By statically pre-rendering every page, the platform achieves instant Time-to-First-Byte (TTFB) and eliminates database attack surfaces.
   * Provide terminal logs of the Next.js static build (`npm run build`) and Turbopack compiler output as evidence of modern server-side compilation.
 

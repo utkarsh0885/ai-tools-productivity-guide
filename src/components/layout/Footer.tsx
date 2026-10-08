@@ -188,7 +188,7 @@ export default function Footer() {
             © 2026 AI Tools & Productivity Guide. Zero-budget academic publication.
           </div>
           <div>
-            Non-commercial project built on Next.js 14 and Vercel Edge.
+            Non-commercial project built with Next.js and deployed on Vercel.
           </div>
         </div>
       </div>
