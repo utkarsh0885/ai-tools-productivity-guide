@@ -42,7 +42,7 @@ export function generateBreadcrumbSchema(items: { name: string; item: string }[]
 }
 
 export function generateSoftwareApplicationSchema(tool: AITool) {
-  return {
+  const schema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: tool.name,
@@ -51,20 +51,24 @@ export function generateSoftwareApplicationSchema(tool: AITool) {
     applicationCategory: 'EducationalApplication',
     operatingSystem: tool.platforms.join(', '),
     url: `${SITE_CONFIG.url}/tools/${tool.slug}`,
-    offers: {
+  };
+
+  // Only declare free offer if the model is genuinely Free, otherwise describe tier availability without fake $0.00 pricing
+  if (tool.pricingModel === 'Free') {
+    schema.offers = {
       '@type': 'Offer',
-      price: '0.00',
+      price: '0',
       priceCurrency: 'USD',
       description: tool.freeTierSummary,
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: tool.editorialRating.toString(),
-      bestRating: '5',
-      worstRating: '1',
-      ratingCount: '1',
-    },
-  };
+    };
+  } else {
+    schema.offers = {
+      '@type': 'Offer',
+      description: tool.freeTierSummary,
+    };
+  }
+
+  return schema;
 }
 
 export function generateArticleSchema(article: GuideArticle) {

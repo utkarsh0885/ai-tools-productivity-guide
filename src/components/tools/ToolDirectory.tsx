@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { AITool, Category } from '@/types';
+import { AITool, Category, Platform } from '@/types';
 import ToolCard from './ToolCard';
 
 interface ToolDirectoryProps {
@@ -34,7 +34,7 @@ export default function ToolDirectory({ initialTools, categories }: ToolDirector
 
       // Platform matching
       const matchesPlatform =
-        selectedPlatform === 'all' || tool.platforms.includes(selectedPlatform as any);
+        selectedPlatform === 'all' || tool.platforms.includes(selectedPlatform as Platform);
 
       return matchesSearch && matchesCategory && matchesPricing && matchesPlatform;
     });
