@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
   name: 'AI Tools & Productivity Guide',
   shortName: 'AI Tools Guide',
   description: 'A verified, non-commercial educational directory helping students, researchers, and professionals discover useful AI tools with transparent free-tier information.',
-  url: 'https://ai-tools-guide.vercel.app', // Production default
+  url: 'https://ai-tools-productivity-guide.vercel.app', // Production default
   ogImage: '/images/og-default.png',
   author: 'Independent Educational SEO Project',
   links: {

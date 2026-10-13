@@ -63,7 +63,7 @@ The 8 long-tail and Latent Semantic Indexing (LSI) queries identified in Milesto
 The following tree represents the **complete architectural site hierarchy** corresponding directly to active, prerendered routes in the project:
 
 ```
-[ https://ai-tools-guide.vercel.app/ ]  (Homepage: Primary Discovery & Navigation Hub)
+[ https://ai-tools-productivity-guide.vercel.app/ ]  (Homepage: Primary Discovery & Navigation Hub)
 │
 ├── /tools/                             (Complete Searchable & Filterable Directory)
 │   ├── /tools/notebooklm/              (Tool Detail Profile: SoftwareApplication Schema)
